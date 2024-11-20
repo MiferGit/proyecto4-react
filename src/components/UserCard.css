@@ -1,0 +1,92 @@
+.card {
+  /* border: 1px solid rgb(3, 3, 3); */
+  /* box-shadow: 2px 2px 7px black; */
+  box-shadow: 3px 5px 20px black;
+  background-color: #fff;
+  background-image: url("/src/assets/image/Art.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0.6em;
+  padding: 1.25em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  &:hover {
+    transform: scale(1.07);
+  }
+}
+
+.card__name {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5em;
+  font-family: Suez One, sans-serif;
+  font-size: 1.2em;
+}
+
+.card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-size: small;
+}
+
+.card__label {
+  display: block;
+  text-transform: uppercase;
+  color: #aaa;
+  font-size: medium;
+  font-family: Suez One, sans-serif;
+}
+
+.card__data {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+}
+
+.card__gift {
+  font-size: 1.5em;
+}
+
+.card__btns {
+  border-top: 3px ridge #ccc;
+  padding-top: 0.5em;
+  display: inline-flex;
+  justify-content: flex-end;
+  gap: 0.5em;
+}
+
+.card__btns--delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(240, 74, 74);
+  border: none;
+  border-radius: 0.35em;
+  padding: 0.5em;
+  font-size: 1.4em;
+  &:hover {
+    transition: 1s;
+    transform: rotate(-15deg);
+    background-color: #e47b61;
+  }
+}
+
+.card__btns--edit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(190, 187, 187);
+  border: none;
+  border-radius: 0.35em;
+  padding: 0.5em;
+  font-size: 1.4em;
+  &:hover {
+    transition: 1s;
+    transform: rotate(15deg);
+    background-color: rgb(172, 219, 219);
+  }
+}

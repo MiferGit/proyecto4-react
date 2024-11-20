@@ -1,0 +1,62 @@
+.header {
+  position: sticky;
+  top: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 60px;
+  padding-bottom: 5em;
+  box-shadow: 0 3px 10px 0 #00000070;
+  background-color: rgba(218, 213, 213, 0.952);
+  background-image: url("/src/assets/image/Liquid.Transition.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 3;
+}
+
+.header__container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 1.7em;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  height: inherit;
+}
+
+.header__title {
+  color: #dddddd;
+  text-shadow: 2px 3px 1px black;
+  font-family: Suez One, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+  width: 16ch;
+  animation: typing 1.5s infinite steps(15) alternate,
+    blink 0.5s infinite step-start;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+.header__btn {
+  background-color: rgba(243, 143, 143, 0.781);
+  border: none;
+  border-radius: 0.5em;
+  box-shadow: 0 0 8px black;
+  font-weight: 500;
+  padding: 0.5em 1em;
+  color: #ffffff;
+  text-shadow: 2px 2px 3px black;
+  font-family: Suez One, sans-serif;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  &:hover {
+    transition: 1s;
+    background-color: rgba(243, 230, 230, 0.952);
+  }
+}
