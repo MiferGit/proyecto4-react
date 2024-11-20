@@ -66,7 +66,7 @@ function App() {
     <Layout>
       <Header openAdd={openAdd} />
       <main className="container">
-        {loading ? (<h2>Cargando...</h2>) : 
+        {loading ? (<h2 className="loading">Cargando...</h2>) : 
         (<UserList users={users} openEdit={openEdit} deleteUser={deleteUser} />)}
       </main>
       <Modal isOpen={isOpen} setIsOpen={setIsOpen}>
