@@ -1,6 +1,7 @@
 import { ImGift } from "react-icons/im";
 import { FaPencilAlt } from "react-icons/fa";
 import { IoTrashOutline } from "react-icons/io5";
+import { MdOutlineMail } from "react-icons/md";
 import "./UserCard.css";
 
 function UserCard({ user, openEdit, deleteUser }) {
@@ -12,7 +13,9 @@ function UserCard({ user, openEdit, deleteUser }) {
       <div className="card__info">
         <div>
           <span className="card__label">Correo</span>
-          {user?.email}
+          <span className="card__data">
+          <MdOutlineMail className="card__email"/> {user?.email}
+          </span>
         </div>
         <div>
           <span className="card__label">Cumpleaños</span>

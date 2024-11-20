@@ -1,6 +1,4 @@
 .card {
-  /* border: 1px solid rgb(3, 3, 3); */
-  /* box-shadow: 2px 2px 7px black; */
   box-shadow: 3px 5px 20px black;
   background-color: #fff;
   background-image: url("/src/assets/image/Art.jpeg");
@@ -47,8 +45,14 @@
   gap: 0.3em;
 }
 
+.card__email {
+  font-size: 1.5em;
+  color: rgb(8, 117, 206);
+}
+
 .card__gift {
   font-size: 1.5em;
+  color: rgb(177, 91, 91);
 }
 
 .card__btns {
