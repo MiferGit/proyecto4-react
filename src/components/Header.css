@@ -50,6 +50,7 @@
   box-shadow: 0 0 8px black;
   font-weight: 500;
   padding: 0.5em 1em;
+  text-align: center;
   color: #ffffff;
   text-shadow: 2px 2px 3px black;
   font-family: Suez One, sans-serif;
@@ -58,5 +59,27 @@
   &:hover {
     transition: 1s;
     background-color: rgba(243, 230, 230, 0.952);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header__btn {
+  width: 6em;
+  
+  background-color: rgba(243, 143, 143, 0.781);
+  border: none;
+  border-radius: 0.5em;
+  box-shadow: 0 0 8px black;
+  font-weight: 300;
+  padding: 0.1em .5em;
+  color: #ffffff;
+  text-shadow: 3px 2px 1px black;
+  font-family: Suez One, sans-serif;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  &:hover {
+    transition: 1s;
+    background-color: rgba(243, 230, 230, 0.952);
+  }
   }
 }
